@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:python-3.12
+FROM python:3.12-slim
 
 ARG OLLAMA_VERSION=0.3.9
 
