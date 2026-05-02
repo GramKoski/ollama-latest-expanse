@@ -1,4 +1,5 @@
 duckduckgo-search
+web-forager
 mcp
 jupyterlab
 ipywidgets
