@@ -1,3 +1,11 @@
 duckduckgo-search
 mcp
 jupyterlab
+numpy
+langchain
+langchain-community
+chromadb
+sentence-transformers
+transformers
+huggingface-hub
+
