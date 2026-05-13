@@ -1,8 +1,18 @@
-duckduckgo-search
-mcp
+# core scientific / EDA stack
+pandas
+numpy
+matplotlib
+seaborn
+
+# Jupyter environment
 jupyterlab
 ipywidgets
-numpy
+
+# search / tools
+duckduckgo-search
+mcp
+
+# LLM + LangChain + vector store
 langchain
 langchain-core
 langchain-community
