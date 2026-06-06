@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+OM python:3.12-slim
 
 LABEL org.opencontainers.image.title="ollama-latest-expanse" \
       org.opencontainers.image.description="Latest Ollama for SDSC Expanse testing" \
@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
     apt-get install -y nodejs && \
-    npm install -g opencode-ai@latest && \
+    npm install -g opencode-ai@latest \
+        @modelcontextprotocol/server-brave-search@1.0.2 && \
     npm cache clean --force
 
 RUN curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst \
