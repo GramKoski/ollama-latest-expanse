@@ -13,8 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
     apt-get install -y nodejs && \
-    npm install -g opencode-ai@latest \
-        @modelcontextprotocol/server-brave-search@1.0.2 && \
+    npm install -g opencode-ai@latest @modelcontextprotocol/server-brave-search@0.6.2 && \
     npm cache clean --force
 
 RUN curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst \
